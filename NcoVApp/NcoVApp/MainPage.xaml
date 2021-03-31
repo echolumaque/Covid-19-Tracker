@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NcoVApp"
+             x:Class="NcoVApp.MainPage"
+             BackgroundColor="White">
+   
+        <Grid RowSpacing="30" ColumnSpacing="30" Padding="30, 30, 40,30">
+
+            <Grid.ColumnDefinitions>
+                <!--patayo to-->
+
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <!--pahiga to-->
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="35*" />
+            <RowDefinition Height="35*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+        <BoxView  CornerRadius="20" BackgroundColor="#FF7B72" Grid.Column="0" Grid.Row="2" />
+        <BoxView  CornerRadius="20" BackgroundColor="#8968BF" Grid.Column="1" Grid.Row="2" />
+        <BoxView  CornerRadius="20" BackgroundColor="#57BEAF" Grid.Column="0" Grid.Row="3" />
+        <BoxView  CornerRadius="20" BackgroundColor="#A5A5A5" Grid.Column="1" Grid.Row="3"  />
+
+
+        <Entry Completed="EntryCOUNTRY_Completed" x:Name="entryCOUNTRY" Placeholder="Enter country"  PlaceholderColor="Black" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium" />
+
+        <Picker x:Name="pckrSEARCH" SelectedIndexChanged="PckrSEARCH_SelectedIndexChanged" Grid.Column="1" Grid.Row="0" TextColor="Black" BackgroundColor="Transparent" 
+                VerticalOptions="End"
+                HorizontalOptions="End" 
+                Margin="0,0,10,20"/>
+
+        <Label x:Name="labelSTATS" Text="" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
+        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start"
+        BackgroundColor="Transparent" TextColor="Black" FontSize="35" FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"   />
+
+          <Label x:Name="labelCOUNTRY" Text="" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" 
+        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start"
+        BackgroundColor="Transparent" TextColor="Black" FontSize="20" FontFamily="gothic.ttf#Century Gothic"  />
+
+        <Label x:Name="labelDATE" Text="" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" 
+        HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start"
+        BackgroundColor="Transparent" TextColor="Black" FontSize="20" FontFamily="gothic.ttf#Century Gothic"  />
+
+        <Label Text="Total Cases" Grid.Column="0" Grid.Row="2" 
+        HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,25,5,0"
+        BackgroundColor="Transparent" TextColor="White" FontSize="24" FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"   />
+
+        <Label x:Name="labelTOTALCASE" Text="0" Grid.Column="0" Grid.Row="2" 
+        HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,90,5,0"
+        BackgroundColor="Transparent"  TextColor="White" FontSize="30" FontFamily="SF-UI-Display-Ultralight.otf#SF UI Display Ultralight" />
+
+        <Label Text="New Cases" Grid.Column="1" Grid.Row="2" 
+        HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,25,5,0"
+        BackgroundColor="Transparent"  TextColor="White" FontSize="26"  FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"/>
+
+        <Label x:Name="labelNEWCASES" Text="0" Grid.Column="1" Grid.Row="2" 
+        HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,90,5,0"
+        BackgroundColor="Transparent"  TextColor="White" FontSize="30" FontFamily="SF-UI-Display-Ultralight.otf#SF UI Display Ultralight"  />
+
+        <Label Text="Total Recovery" Grid.Column="0" Grid.Row="3" 
+        HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,25,5,0"
+        BackgroundColor="Transparent"  TextColor="White" FontSize="18" FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"/>
+
+        <Label x:Name="labelRECOVER" Text="0" Grid.Column="0" Grid.Row="3" 
+        HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,90,5,0"
+        BackgroundColor="Transparent"  TextColor="White" FontSize="30" FontFamily="SF-UI-Display-Ultralight.otf#SF UI Display Ultralight"  />
+
+        <Label Text="Total Death" Grid.Column="1" Grid.Row="3" 
+        HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,25,5,0"
+        BackgroundColor="Transparent"  TextColor="White" FontSize="24" FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"/>
+
+        <Label x:Name="labelDEATHS" Text="0" Grid.Column="1" Grid.Row="3" 
+        HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,90,5,0"
+        BackgroundColor="Transparent"  TextColor="White" FontSize="30" FontFamily="SF-UI-Display-Ultralight.otf#SF UI Display Ultralight" />
+    </Grid>
+
+   
+
+</ContentPage>
